@@ -1,0 +1,47 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+.venv_svcomp/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# MkDocs
+site/
+
+# DASA runtime artifacts
+SUT/
+dasa-tmp-workdir/
+graal_dumps/
+*.bgv
+
+# Compiled Java classes (in SUTs they're generated)
+SUTs/*/*.class
+
+# Large bundled dependencies (download separately)
+libs/graalvm-community-openjdk-22.0.2+9.1/
+libs/seafoam/
+libs/*.whl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

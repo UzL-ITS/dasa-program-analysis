@@ -1,0 +1,6963 @@
+{
+  "name": [
+    "Main.main(String[])",
+    "Before phase jdk.graal.compiler.phases.common.HighTierLoweringPhase"
+  ],
+  "props": {
+    "compilationIdentifier": "SubstrateHostedCompilation-2643[Main.main(String[])]",
+    "StageFlags": "[FINAL_PARTIAL_ESCAPE, GUARD_LOWERING]",
+    "scope": "ForkJoinPool.commonPool-worker-2.Operation.Compiling.GraalCompiler.FrontEnd.HighTier.HighTierLoweringPhase",
+    "edgeModificationCount": 86,
+    "node-cost graph size": 22,
+    "speculationLog": "null",
+    "graph": "StructuredGraph:78968{HostedMethod<Main.main -> AnalysisMethod<Main.main -> HotSpotMethod<Main.main(String[])>, invoked: true, implInvoked: true, intrinsic: false, inlined: false>>}",
+    "assumptions": "null"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "id": 0,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.StartNode",
+          "name_template": "Start",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 1,
+      "props": {
+        "bytecode": "invokestatic",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 0,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "BeforePop",
+        "sourceLine": 7,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 1,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 3,
+      "props": {
+        "relativeFrequency": 1.0,
+        "invokeKind": "Static",
+        "targetMethod": {
+          "declaring_class": "org.sosy_lab.sv_benchmarks.Verifier",
+          "method_name": "nondetInt",
+          "signature": {
+            "args": [
+
+            ],
+            "ret": "I"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "typeProfile": null,
+        "referencedType": null,
+        "staticTypeProfile": null,
+        "returnStamp": "i32",
+        "methodProfile": null,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 3,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.nodes.SubstrateMethodCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 4,
+      "props": {
+        "bytecode": "istore_1",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 3,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "BeforePop",
+        "sourceLine": 7,
+        "stackSize": 1,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 4,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 11,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 1.0000000000287557E-6",
+        "category": "controlSplit",
+        "id": 11,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 12,
+      "props": {
+        "relativeFrequency": 1.0,
+        "stampKind": "i32",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i32 [11]",
+        "nodeToBlock": "B0",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "11",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "int[11|0xb]",
+        "id": 12,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 13,
+      "props": {
+        "op": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode$LessThanOp@168cd36b",
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "unorderedIsTrue": false,
+        "condition": "LT",
+        "nodeCostCycles": "CYCLES_1",
+        "category": "floating",
+        "id": 13,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode",
+          "name_template": "<",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "x",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "y",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 14,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 14,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 15,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 15,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 17,
+      "props": {
+        "relativeFrequency": 1.0,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.io.PrintStream",
+        "nodeToBlock": "B0",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "PrintStream@1417fb4",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.io.PrintStream, reachable: true, reader installed: true, compressed: false>",
+        "id": 17,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 18,
+      "props": {
+        "relativeFrequency": 1.0,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B0",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "No Failure detected",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 18,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 19,
+      "props": {
+        "relativeFrequency": 1.0,
+        "invokeKind": "Special",
+        "targetMethod": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "writeln",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 2
+        },
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "typeProfile": null,
+        "referencedType": null,
+        "staticTypeProfile": null,
+        "returnStamp": "void",
+        "methodProfile": null,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 19,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.nodes.SubstrateMethodCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 20,
+      "props": {
+        "bytecode": "invokevirtual",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 31,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 10,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 20,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 21,
+      "props": {
+        "bytecode": "goto",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "println",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 1
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 17,
+        "nodeToBlock": "B0",
+        "sourceFile": "PrintStream.java",
+        "stackState": "BeforePop",
+        "sourceLine": 1168,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 4,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 21,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 26,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_4",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "category": "controlSink",
+        "id": 26,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ReturnNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "memoryMap",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "result",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 29,
+      "props": {
+        "relativeFrequency": 1.0,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B0",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "i is smaller 10",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 29,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 33,
+      "props": {
+        "relativeFrequency": 1.0,
+        "targetMethod": "Verifier.nondetInt",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "i32",
+        "bci": 0,
+        "polymorphic": false,
+        "nodeToBlock": "B0",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 33,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 34,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "targetMethod": "PrintStream.writeln",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": 14,
+        "polymorphic": false,
+        "nodeToBlock": "B2",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 34,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 35,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "exceptionKind": "ASSERTION_ERROR_OBJECT",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "category": "controlSink",
+        "id": 35,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.ThrowBytecodeExceptionNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateBefore",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 36,
+      "props": {
+        "bytecode": "athrow",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": false,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 25,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 9,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 36,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 1,
+      "to": 0,
+      "props": {
+        "direct": true,
+        "name": "stateAfter",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 3,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 4,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "stateAfter",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 15,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "y",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 14,
+      "to": 35,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 15,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 1
+      }
+    },
+    {
+      "from": 19,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "props": {
+        "direct": true,
+        "name": "outerFrameState",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 21,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "stateAfter",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 29,
+      "to": 35,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 4,
+      "props": {
+        "direct": false,
+        "name": "values",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "x",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 34,
+      "to": 26,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 36,
+      "to": 35,
+      "props": {
+        "direct": true,
+        "name": "stateBefore",
+        "type": "State",
+        "index": 0
+      }
+    }
+  ]
+}
+{
+  "name": [
+    "Main.main(String[])",
+    "After high tier"
+  ],
+  "props": {
+    "compilationIdentifier": "SubstrateHostedCompilation-2643[Main.main(String[])]",
+    "StageFlags": "[FINAL_PARTIAL_ESCAPE, HIGH_TIER_LOWERING, GUARD_LOWERING]",
+    "scope": "ForkJoinPool.commonPool-worker-2.Operation.Compiling.GraalCompiler.FrontEnd",
+    "edgeModificationCount": 88,
+    "node-cost graph size": 22,
+    "speculationLog": "null",
+    "graph": "StructuredGraph:78968{HostedMethod<Main.main -> AnalysisMethod<Main.main -> HotSpotMethod<Main.main(String[])>, invoked: true, implInvoked: true, intrinsic: false, inlined: false>>}",
+    "assumptions": "null"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "id": 0,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.StartNode",
+          "name_template": "Start",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 1,
+      "props": {
+        "bytecode": "invokestatic",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 0,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "BeforePop",
+        "sourceLine": 7,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 1,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 4,
+      "props": {
+        "bytecode": "istore_1",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 3,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "BeforePop",
+        "sourceLine": 7,
+        "stackSize": 1,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 4,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 11,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 1.0000000000287557E-6",
+        "category": "controlSplit",
+        "id": 11,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 12,
+      "props": {
+        "relativeFrequency": 1.0,
+        "stampKind": "i32",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i32 [11]",
+        "nodeToBlock": "B0",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "11",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "int[11|0xb]",
+        "id": 12,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 13,
+      "props": {
+        "op": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode$LessThanOp@168cd36b",
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "unorderedIsTrue": false,
+        "condition": "LT",
+        "nodeCostCycles": "CYCLES_1",
+        "category": "floating",
+        "id": 13,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode",
+          "name_template": "<",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "x",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "y",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 14,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 14,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 15,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 15,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 17,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.io.PrintStream",
+        "nodeToBlock": "B2",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "PrintStream@1417fb4",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.io.PrintStream, reachable: true, reader installed: true, compressed: false>",
+        "id": 17,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 18,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B2",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "No Failure detected",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 18,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 20,
+      "props": {
+        "bytecode": "invokevirtual",
+        "relativeFrequency": 0.999999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 31,
+        "nodeToBlock": "B2",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 10,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 20,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 21,
+      "props": {
+        "bytecode": "goto",
+        "relativeFrequency": 0.999999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "println",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 1
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 17,
+        "nodeToBlock": "B2",
+        "sourceFile": "PrintStream.java",
+        "stackState": "BeforePop",
+        "sourceLine": 1168,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 4,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 21,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 26,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_4",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "category": "controlSink",
+        "id": 26,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ReturnNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "memoryMap",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "result",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 29,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B1",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "i is smaller 10",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 29,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 33,
+      "props": {
+        "relativeFrequency": 1.0,
+        "targetMethod": "Direct#Verifier.nondetInt",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "i32",
+        "bci": 0,
+        "polymorphic": false,
+        "nodeToBlock": "B0",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 33,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 34,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "targetMethod": "Direct#PrintStream.writeln",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": 14,
+        "polymorphic": false,
+        "nodeToBlock": "B2",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 34,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 35,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "exceptionKind": "ASSERTION_ERROR_OBJECT",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "category": "controlSink",
+        "id": 35,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.ThrowBytecodeExceptionNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateBefore",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 36,
+      "props": {
+        "bytecode": "athrow",
+        "relativeFrequency": 1.0000000000287557e-06,
+        "validForDeoptimization": false,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 25,
+        "nodeToBlock": "B1",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 9,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 36,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 37,
+      "props": {
+        "invokeKind": "Static",
+        "targetMethod": {
+          "declaring_class": "org.sosy_lab.sv_benchmarks.Verifier",
+          "method_name": "nondetInt",
+          "signature": {
+            "args": [
+
+            ],
+            "ret": "I"
+          },
+          "modifiers": 9
+        },
+        "signature": [
+
+        ],
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "referencedType": null,
+        "callType": "com.oracle.svm.core.graal.code.SubstrateCallingConventionType@bb79e571",
+        "returnStamp": "i32",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 37,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.DirectCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 38,
+      "props": {
+        "invokeKind": "Special",
+        "targetMethod": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "writeln",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 2
+        },
+        "signature": [
+          "java.io.PrintStream",
+          "java.lang.String"
+        ],
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "referencedType": null,
+        "callType": "com.oracle.svm.core.graal.code.SubstrateCallingConventionType@bb79e571",
+        "returnStamp": "void",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 38,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.DirectCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 1,
+      "to": 0,
+      "props": {
+        "direct": true,
+        "name": "stateAfter",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 4,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "stateAfter",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 15,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "y",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 14,
+      "to": 35,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 15,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 17,
+      "to": 38,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 18,
+      "to": 38,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 1
+      }
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "props": {
+        "direct": true,
+        "name": "outerFrameState",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 21,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "stateAfter",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 29,
+      "to": 35,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 4,
+      "props": {
+        "direct": false,
+        "name": "values",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "x",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 34,
+      "to": 26,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 36,
+      "to": 35,
+      "props": {
+        "direct": true,
+        "name": "stateBefore",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 37,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 38,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    }
+  ]
+}
+{
+  "name": [
+    "Main.main(String[])",
+    "After mid tier"
+  ],
+  "props": {
+    "compilationIdentifier": "SubstrateHostedCompilation-2643[Main.main(String[])]",
+    "StageFlags": "[FINAL_PARTIAL_ESCAPE, HIGH_TIER_LOWERING, FLOATING_READS, GUARD_LOWERING, VALUE_PROXY_REMOVAL, SAFEPOINTS_INSERTION, MID_TIER_LOWERING, FSA, BARRIER_ADDITION]",
+    "scope": "ForkJoinPool.commonPool-worker-2.Operation.Compiling.GraalCompiler.FrontEnd",
+    "edgeModificationCount": 134,
+    "node-cost graph size": 31,
+    "speculationLog": "null",
+    "graph": "StructuredGraph:78968{HostedMethod<Main.main -> AnalysisMethod<Main.main -> HotSpotMethod<Main.main(String[])>, invoked: true, implInvoked: true, intrinsic: false, inlined: false>>}",
+    "assumptions": "null"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "id": 0,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.StartNode",
+          "name_template": "Start",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 1,
+      "props": {
+        "bytecode": "invokestatic",
+        "relativeFrequency": 1.0,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 0,
+        "nodeToBlock": "B0",
+        "sourceFile": "Main.java",
+        "stackState": "BeforePop",
+        "sourceLine": 7,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 1,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 11,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 1.0000000000287557E-6",
+        "category": "controlSplit",
+        "id": 11,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 12,
+      "props": {
+        "relativeFrequency": 1.0,
+        "stampKind": "i32",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i32 [11]",
+        "nodeToBlock": "B0",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "11",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "int[11|0xb]",
+        "id": 12,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 13,
+      "props": {
+        "op": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode$LessThanOp@168cd36b",
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "unorderedIsTrue": false,
+        "condition": "LT",
+        "nodeCostCycles": "CYCLES_1",
+        "category": "floating",
+        "id": 13,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode",
+          "name_template": "<",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "x",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "y",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 14,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 14,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 15,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 15,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 17,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.io.PrintStream",
+        "nodeToBlock": "B2",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "PrintStream@1417fb4",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.io.PrintStream, reachable: true, reader installed: true, compressed: false>",
+        "id": 17,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 18,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B2",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "No Failure detected",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 18,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 20,
+      "props": {
+        "bytecode": "invokevirtual",
+        "relativeFrequency": 0.999999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 31,
+        "nodeToBlock": "B2",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 10,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 20,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 21,
+      "props": {
+        "bytecode": "goto",
+        "relativeFrequency": 0.999999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "println",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 1
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 17,
+        "nodeToBlock": "B2",
+        "sourceFile": "PrintStream.java",
+        "stackState": "BeforePop",
+        "sourceLine": 1168,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 4,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 21,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 26,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_4",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "category": "controlSink",
+        "id": 26,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ReturnNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "memoryMap",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "result",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 29,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B1",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "i is smaller 10",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 29,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 33,
+      "props": {
+        "relativeFrequency": 1.0,
+        "targetMethod": "Direct#Verifier.nondetInt",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "i32",
+        "bci": 0,
+        "polymorphic": false,
+        "nodeToBlock": "B0",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 33,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 34,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "targetMethod": "Direct#PrintStream.writeln",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": 14,
+        "polymorphic": false,
+        "nodeToBlock": "B2",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 34,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 36,
+      "props": {
+        "bytecode": "athrow",
+        "relativeFrequency": 1.0000000000287557e-06,
+        "validForDeoptimization": false,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 25,
+        "nodeToBlock": "B1",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 9,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 36,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 37,
+      "props": {
+        "relativeFrequency": 1.0,
+        "invokeKind": "Static",
+        "targetMethod": {
+          "declaring_class": "org.sosy_lab.sv_benchmarks.Verifier",
+          "method_name": "nondetInt",
+          "signature": {
+            "args": [
+
+            ],
+            "ret": "I"
+          },
+          "modifiers": 9
+        },
+        "signature": [
+
+        ],
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "referencedType": null,
+        "callType": "com.oracle.svm.core.graal.code.SubstrateCallingConventionType@bb79e571",
+        "returnStamp": "i32",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 37,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.DirectCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 38,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "invokeKind": "Special",
+        "targetMethod": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "writeln",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 2
+        },
+        "signature": [
+          "java.io.PrintStream",
+          "java.lang.String"
+        ],
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "referencedType": null,
+        "callType": "com.oracle.svm.core.graal.code.SubstrateCallingConventionType@bb79e571",
+        "returnStamp": "void",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 38,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.DirectCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 39,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "id": 39,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.SafepointNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateBefore",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 41,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "i64",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "register": "r28",
+        "id": 41,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.ReadReservedRegisterFloatingNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 42,
+      "props": {
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 0.999999",
+        "category": "controlSplit",
+        "id": 42,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 43,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "i64",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "register": "sp",
+        "id": 43,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.ReadReservedRegisterFloatingNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 44,
+      "props": {
+        "op": "jdk.graal.compiler.nodes.calc.IntegerBelowNode$BelowOp@6ba30587",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "unorderedIsTrue": false,
+        "condition": "BT",
+        "nodeCostCycles": "CYCLES_1",
+        "category": "floating",
+        "id": 44,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.calc.IntegerBelowNode",
+          "name_template": "|<|",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "x",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "y",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 45,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 45,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 46,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 46,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 47,
+      "props": {
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": -5,
+        "killedLocationIdentities": [
+          "TLAB.top",
+          "TLAB.end",
+          "identityHashCodeSalt"
+        ],
+        "descriptor": "SubstrateForeignCallDescriptor{throwNewStackOverflowError()void, callSideEffect=NO_SIDE_EFFECT, canDeoptimize=true, isGuaranteedSafepoint=false, killedLocations=[TLAB.top, TLAB.end, identityHashCodeSalt]}",
+        "nodeCostCycles": "CYCLES_2",
+        "validateDeoptFrameStates": true,
+        "category": "fixed",
+        "descriptorName": "throwNewStackOverflowError",
+        "id": 47,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.extended.ForeignCallNode",
+          "name_template": "ForeignCall#{p#descriptorName/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 49,
+      "props": {
+        "stampKind": "i64",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i64 [8]",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "8",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "long[8|0x8]",
+        "id": 49,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 50,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void*",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 50,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.memory.address.OffsetAddressNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "base",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "offset",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 51,
+      "props": {
+        "memoryOrder": "PLAIN",
+        "deoptReasonAndAction": null,
+        "deoptSpeculation": null,
+        "barrierType": "NONE",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i64",
+        "forceFixed": true,
+        "extendKind": "DEFAULT",
+        "killedLocationIdentity": "NO_LOCATION",
+        "usedAsNullCheck": false,
+        "accessStamp": "i64",
+        "locationIdentity": "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+        "location": "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "id": 51,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.memory.ReadNode",
+          "name_template": "Read#{p#location/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateBefore",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "guard",
+              "type": "Guard"
+            },
+            {
+              "direct": true,
+              "name": "address",
+              "type": "Association"
+            },
+            {
+              "direct": true,
+              "name": "lastLocationAccess",
+              "type": "Memory"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 52,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "controlSink",
+        "id": 52,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.LoweredDeadEndNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 53,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "killedLocationIdentities": [
+          "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+          "Counter.value"
+        ],
+        "locations": [
+          "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+          "Counter.value"
+        ],
+        "nodeCostCycles": "CYCLES_0",
+        "category": "fixed",
+        "id": 53,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.memory.MemoryAnchorNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 54,
+      "props": {
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": -5,
+        "killedLocationIdentities": [
+          "TLAB.top",
+          "TLAB.end",
+          "identityHashCodeSalt"
+        ],
+        "descriptor": "SubstrateForeignCallDescriptor{throwNewAssertionErrorObject(Object)void, callSideEffect=NO_SIDE_EFFECT, canDeoptimize=true, isGuaranteedSafepoint=true, killedLocations=[TLAB.top, TLAB.end, identityHashCodeSalt]}",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "validateDeoptFrameStates": false,
+        "category": "fixed",
+        "descriptorName": "throwNewAssertionErrorObject",
+        "id": 54,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.extended.ForeignCallNode",
+          "name_template": "ForeignCall#{p#descriptorName/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 55,
+      "props": {
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "controlSink",
+        "id": 55,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.LoweredDeadEndNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 56,
+      "props": {
+        "bytecode": "invokestatic",
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 0,
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 7,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 56,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 57,
+      "props": {
+        "bytecode": "invokevirtual",
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "println",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 1
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 14,
+        "sourceFile": "PrintStream.java",
+        "stackState": "AfterPop",
+        "sourceLine": 1168,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 4,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 57,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 53,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 1,
+      "to": 47,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 15,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "y",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 14,
+      "to": 54,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 15,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 17,
+      "to": 38,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 18,
+      "to": 38,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 1
+      }
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "props": {
+        "direct": true,
+        "name": "outerFrameState",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 20,
+      "to": 57,
+      "props": {
+        "direct": true,
+        "name": "outerFrameState",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 21,
+      "to": 39,
+      "props": {
+        "direct": true,
+        "name": "stateBefore",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 29,
+      "to": 54,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "x",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 34,
+      "to": 39,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 36,
+      "to": 54,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 37,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 38,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 39,
+      "to": 26,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 41,
+      "to": 50,
+      "props": {
+        "direct": true,
+        "name": "base",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 42,
+      "to": 45,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 42,
+      "to": 46,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "props": {
+        "direct": true,
+        "name": "y",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 44,
+      "to": 42,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 45,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 47,
+      "to": 52,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "props": {
+        "direct": true,
+        "name": "offset",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "props": {
+        "direct": true,
+        "name": "address",
+        "type": "Association",
+        "index": 0
+      }
+    },
+    {
+      "from": 51,
+      "to": 44,
+      "props": {
+        "direct": true,
+        "name": "x",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 51,
+      "to": 42,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 53,
+      "to": 51,
+      "props": {
+        "direct": true,
+        "name": "lastLocationAccess",
+        "type": "Memory",
+        "index": 0
+      }
+    },
+    {
+      "from": 53,
+      "to": 51,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 56,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 57,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    }
+  ]
+}
+{
+  "name": [
+    "Main.main(String[])",
+    "After low tier"
+  ],
+  "props": {
+    "compilationIdentifier": "SubstrateHostedCompilation-2643[Main.main(String[])]",
+    "StageFlags": "[FINAL_PARTIAL_ESCAPE, HIGH_TIER_LOWERING, FLOATING_READS, GUARD_LOWERING, VALUE_PROXY_REMOVAL, SAFEPOINTS_INSERTION, MID_TIER_LOWERING, FSA, BARRIER_ADDITION, LOW_TIER_LOWERING, EXPAND_LOGIC, FIXED_READS, ADDRESS_LOWERING, FINAL_CANONICALIZATION]",
+    "scope": "ForkJoinPool.commonPool-worker-2.Operation.Compiling.GraalCompiler.FrontEnd",
+    "edgeModificationCount": 178,
+    "node-cost graph size": 35,
+    "speculationLog": "null",
+    "graph": "StructuredGraph:78968{HostedMethod<Main.main -> AnalysisMethod<Main.main -> HotSpotMethod<Main.main(String[])>, invoked: true, implInvoked: true, intrinsic: false, inlined: false>>}",
+    "assumptions": "null"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "id": 0,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.StartNode",
+          "name_template": "Start",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 1,
+      "props": {
+        "bytecode": "invokestatic",
+        "relativeFrequency": 1.0000000000287557e-06,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 0,
+        "nodeToBlock": "B7",
+        "sourceFile": "Main.java",
+        "stackState": "BeforePop",
+        "sourceLine": 7,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 1,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 11,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 1.0000000000287557E-6",
+        "category": "controlSplit",
+        "id": 11,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 12,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "stampKind": "i32",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i32 [11]",
+        "nodeToBlock": "B1",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "11",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "int[11|0xb]",
+        "id": 12,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 13,
+      "props": {
+        "op": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode$LessThanOp@168cd36b",
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "unorderedIsTrue": false,
+        "condition": "LT",
+        "nodeCostCycles": "CYCLES_1",
+        "category": "floating",
+        "id": 13,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.calc.IntegerLessThanNode",
+          "name_template": "<",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "x",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "y",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 14,
+      "props": {
+        "relativeFrequency": 9.999990000287556e-07,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 14,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 15,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B3",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 15,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 17,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.io.PrintStream",
+        "nodeToBlock": "B3",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "PrintStream@1417fb4",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.io.PrintStream, reachable: true, reader installed: true, compressed: false>",
+        "id": 17,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 18,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B3",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "No Failure detected",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 18,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 20,
+      "props": {
+        "bytecode": "invokevirtual",
+        "relativeFrequency": 0.9999980000009999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 31,
+        "nodeToBlock": "B3",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 10,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 20,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 21,
+      "props": {
+        "bytecode": "goto",
+        "relativeFrequency": 0.0009999980000010007,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "println",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 1
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 17,
+        "nodeToBlock": "B4",
+        "sourceFile": "PrintStream.java",
+        "stackState": "BeforePop",
+        "sourceLine": 1168,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 4,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 21,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 26,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "nodeCostSize": "SIZE_4",
+        "stamp": "void",
+        "nodeToBlock": "B6",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "category": "controlSink",
+        "id": 26,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ReturnNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "memoryMap",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "result",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 29,
+      "props": {
+        "relativeFrequency": 9.999990000287556e-07,
+        "stampKind": "a java.lang.Object",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "a!# java.lang.String",
+        "nodeToBlock": "B2",
+        "isDefaultStable": false,
+        "stableDimension": 0,
+        "rawvalue": "i is smaller 10",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "value": "ImageHeapConstant<java.lang.String, reachable: true, reader installed: true, compressed: false>",
+        "id": 29,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.ConstantNode",
+          "name_template": "C({p#rawvalue}) {p#stampKind}",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 33,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "targetMethod": "Direct#Verifier.nondetInt",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "i32",
+        "bci": 0,
+        "polymorphic": false,
+        "nodeToBlock": "B1",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 33,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 34,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "targetMethod": "Direct#PrintStream.writeln",
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": 14,
+        "polymorphic": false,
+        "nodeToBlock": "B3",
+        "killedLocationIdentity": "ANY_LOCATION",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "identity": "ANY_LOCATION",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "inlineControl": "Normal",
+        "id": 34,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.InvokeNode",
+          "name_template": "Invoke#{p#targetMethod/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "classInit",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "callTarget",
+              "type": "Extension"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 36,
+      "props": {
+        "bytecode": "athrow",
+        "relativeFrequency": 9.999990000287556e-07,
+        "validForDeoptimization": false,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 25,
+        "nodeToBlock": "B2",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 9,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 36,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 37,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "invokeKind": "Static",
+        "targetMethod": {
+          "declaring_class": "org.sosy_lab.sv_benchmarks.Verifier",
+          "method_name": "nondetInt",
+          "signature": {
+            "args": [
+
+            ],
+            "ret": "I"
+          },
+          "modifiers": 9
+        },
+        "signature": [
+
+        ],
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "referencedType": null,
+        "callType": "com.oracle.svm.core.graal.code.SubstrateCallingConventionType@bb79e571",
+        "returnStamp": "i32",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 37,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.DirectCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 38,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "invokeKind": "Special",
+        "targetMethod": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "writeln",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 2
+        },
+        "signature": [
+          "java.io.PrintStream",
+          "java.lang.String"
+        ],
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B3",
+        "referencedType": null,
+        "callType": "com.oracle.svm.core.graal.code.SubstrateCallingConventionType@bb79e571",
+        "returnStamp": "void",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "java.io.PrintStream",
+            "method_name": "println",
+            "signature": {
+              "args": [
+                "Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 1
+          },
+          "bci": 0,
+          "locs": [
+            [
+              "Java",
+              1167,
+              -1,
+              -1
+            ]
+          ],
+          "caller": {
+            "method": {
+              "declaring_class": "Main",
+              "method_name": "main",
+              "signature": {
+                "args": [
+                  "[Ljava/lang/String;"
+                ],
+                "ret": "V"
+              },
+              "modifiers": 9
+            },
+            "bci": -6,
+            "locs": [
+              [
+                "Java",
+                -1,
+                -1,
+                -1
+              ]
+            ],
+            "caller": null
+          }
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 38,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.DirectCallTargetNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 41,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "i64",
+        "nodeToBlock": "B0",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "register": "r28",
+        "id": 41,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.ReadReservedRegisterFloatingNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 42,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 0.999999",
+        "category": "controlSplit",
+        "id": 42,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 43,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "i64",
+        "nodeToBlock": "B0",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "register": "sp",
+        "id": 43,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.ReadReservedRegisterFloatingNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 44,
+      "props": {
+        "op": "jdk.graal.compiler.nodes.calc.IntegerBelowNode$BelowOp@6ba30587",
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_1",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "unorderedIsTrue": false,
+        "condition": "BT",
+        "nodeCostCycles": "CYCLES_1",
+        "category": "floating",
+        "id": 44,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.calc.IntegerBelowNode",
+          "name_template": "|<|",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "x",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "y",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 45,
+      "props": {
+        "relativeFrequency": 0.999999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B1",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 45,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 46,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B7",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 46,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 47,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": -5,
+        "nodeToBlock": "B7",
+        "killedLocationIdentities": [
+          "TLAB.top",
+          "TLAB.end",
+          "identityHashCodeSalt"
+        ],
+        "descriptor": "SubstrateForeignCallDescriptor{throwNewStackOverflowError()void, callSideEffect=NO_SIDE_EFFECT, canDeoptimize=true, isGuaranteedSafepoint=false, killedLocations=[TLAB.top, TLAB.end, identityHashCodeSalt]}",
+        "nodeCostCycles": "CYCLES_2",
+        "validateDeoptFrameStates": true,
+        "category": "fixed",
+        "descriptorName": "throwNewStackOverflowError",
+        "id": 47,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.extended.ForeignCallNode",
+          "name_template": "ForeignCall#{p#descriptorName/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 51,
+      "props": {
+        "relativeFrequency": 1.0,
+        "memoryOrder": "PLAIN",
+        "deoptReasonAndAction": null,
+        "deoptSpeculation": null,
+        "barrierType": "NONE",
+        "nodeCostSize": "SIZE_1",
+        "stamp": "i64",
+        "nodeToBlock": "B0",
+        "forceFixed": true,
+        "extendKind": "DEFAULT",
+        "killedLocationIdentity": "NO_LOCATION",
+        "usedAsNullCheck": false,
+        "accessStamp": "i64",
+        "locationIdentity": "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+        "location": "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "fixed",
+        "id": 51,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.memory.ReadNode",
+          "name_template": "Read#{p#location/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateBefore",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "guard",
+              "type": "Guard"
+            },
+            {
+              "direct": true,
+              "name": "address",
+              "type": "Association"
+            },
+            {
+              "direct": true,
+              "name": "lastLocationAccess",
+              "type": "Memory"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 52,
+      "props": {
+        "relativeFrequency": 1.0000000000287557e-06,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B7",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "controlSink",
+        "id": 52,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.LoweredDeadEndNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 53,
+      "props": {
+        "relativeFrequency": 1.0,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B0",
+        "killedLocationIdentities": [
+          "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+          "Counter.value"
+        ],
+        "locations": [
+          "FastThreadLocal:StackOverflowCheckImpl.stackBoundaryTL",
+          "Counter.value"
+        ],
+        "nodeCostCycles": "CYCLES_0",
+        "category": "fixed",
+        "id": 53,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.memory.MemoryAnchorNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 54,
+      "props": {
+        "relativeFrequency": 9.999990000287556e-07,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": -5,
+        "nodeToBlock": "B2",
+        "killedLocationIdentities": [
+          "TLAB.top",
+          "TLAB.end",
+          "identityHashCodeSalt"
+        ],
+        "descriptor": "SubstrateForeignCallDescriptor{throwNewAssertionErrorObject(Object)void, callSideEffect=NO_SIDE_EFFECT, canDeoptimize=true, isGuaranteedSafepoint=true, killedLocations=[TLAB.top, TLAB.end, identityHashCodeSalt]}",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_2",
+        "validateDeoptFrameStates": false,
+        "category": "fixed",
+        "descriptorName": "throwNewAssertionErrorObject",
+        "id": 54,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.extended.ForeignCallNode",
+          "name_template": "ForeignCall#{p#descriptorName/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 55,
+      "props": {
+        "relativeFrequency": 9.999990000287556e-07,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B2",
+        "nodeSourcePosition": {
+          "method": {
+            "declaring_class": "Main",
+            "method_name": "main",
+            "signature": {
+              "args": [
+                "[Ljava/lang/String;"
+              ],
+              "ret": "V"
+            },
+            "modifiers": 9
+          },
+          "bci": -6,
+          "locs": [
+            [
+              "Java",
+              -1,
+              -1,
+              -1
+            ]
+          ],
+          "caller": null
+        },
+        "nodeCostCycles": "CYCLES_0",
+        "category": "controlSink",
+        "id": 55,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.graal.nodes.LoweredDeadEndNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 56,
+      "props": {
+        "bytecode": "invokestatic",
+        "relativeFrequency": 0.999999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "Main",
+          "method_name": "main",
+          "signature": {
+            "args": [
+              "[Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 9
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 0,
+        "nodeToBlock": "B1",
+        "sourceFile": "Main.java",
+        "stackState": "AfterPop",
+        "sourceLine": 7,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 2,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 56,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 57,
+      "props": {
+        "bytecode": "invokevirtual",
+        "relativeFrequency": 0.9999980000009999,
+        "validForDeoptimization": true,
+        "code": {
+          "declaring_class": "java.io.PrintStream",
+          "method_name": "println",
+          "signature": {
+            "args": [
+              "Ljava/lang/String;"
+            ],
+            "ret": "V"
+          },
+          "modifiers": 1
+        },
+        "nodeCostSize": "SIZE_1",
+        "bci": 14,
+        "nodeToBlock": "B3",
+        "sourceFile": "PrintStream.java",
+        "stackState": "AfterPop",
+        "sourceLine": 1168,
+        "stackSize": 0,
+        "locksSize": 0,
+        "localsSize": 4,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "state",
+        "id": 57,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.FrameState",
+          "name_template": "@{p#code/s}:{p#bci}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "outerFrameState",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "values",
+              "type": "Value"
+            },
+            {
+              "direct": false,
+              "name": "monitorIds",
+              "type": "Association"
+            },
+            {
+              "direct": false,
+              "name": "virtualObjectMappings",
+              "type": "State"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 58,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B3",
+        "nodeCostCycles": "CYCLES_1",
+        "profileData": "INJECTED designatedSuccessorProbability: 0.0010000000000000009",
+        "category": "controlSplit",
+        "id": 58,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.IfNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "condition",
+              "type": "Condition"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "trueSuccessor",
+              "type": null
+            },
+            {
+              "direct": true,
+              "name": "falseSuccessor",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 59,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "nodeToBlock": "B3",
+        "nodeCostCycles": "CYCLES_2",
+        "category": "floating",
+        "id": 59,
+        "node_class": {
+          "node_class": "com.oracle.svm.core.nodes.SafepointCheckNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 60,
+      "props": {
+        "relativeFrequency": 0.0009999980000010007,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B4",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 60,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 61,
+      "props": {
+        "relativeFrequency": 0.998998002000999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B5",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "begin",
+        "id": 61,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.BeginNode",
+          "name_template": "",
+          "inputs": [
+
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 62,
+      "props": {
+        "relativeFrequency": 0.998998002000999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B5",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "end",
+        "id": 62,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.EndNode",
+          "name_template": "End",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 63,
+      "props": {
+        "relativeFrequency": 0.9999980000009999,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B6",
+        "hasSpeculationFence": false,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "merge",
+        "id": 63,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.MergeNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "ends",
+              "type": "Association"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": false
+      }
+    },
+    {
+      "id": 64,
+      "props": {
+        "relativeFrequency": 0.0009999980000010007,
+        "nodeCostSize": "SIZE_2",
+        "stamp": "void",
+        "bci": -5,
+        "nodeToBlock": "B4",
+        "killedLocationIdentities": [
+          "TLAB.top",
+          "TLAB.end",
+          "identityHashCodeSalt"
+        ],
+        "descriptor": "SubstrateForeignCallDescriptor{enterSlowPathSafepointCheck()void, callSideEffect=NO_SIDE_EFFECT, canDeoptimize=true, isGuaranteedSafepoint=false, killedLocations=[TLAB.top, TLAB.end, identityHashCodeSalt]}",
+        "nodeCostCycles": "CYCLES_2",
+        "validateDeoptFrameStates": true,
+        "category": "fixed",
+        "descriptorName": "enterSlowPathSafepointCheck",
+        "id": 64,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.extended.ForeignCallNode",
+          "name_template": "ForeignCall#{p#descriptorName/s}",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "stateAfter",
+              "type": "State"
+            },
+            {
+              "direct": true,
+              "name": "stateDuring",
+              "type": "State"
+            },
+            {
+              "direct": false,
+              "name": "arguments",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+            {
+              "direct": true,
+              "name": "next",
+              "type": null
+            }
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 65,
+      "props": {
+        "relativeFrequency": 0.0009999980000010007,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void",
+        "nodeToBlock": "B4",
+        "nodeCostCycles": "CYCLES_0",
+        "category": "end",
+        "id": 65,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.nodes.EndNode",
+          "name_template": "End",
+          "inputs": [
+
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": true
+      }
+    },
+    {
+      "id": 72,
+      "props": {
+        "relativeFrequency": 1.0,
+        "scaleFactor": 8,
+        "nodeCostSize": "SIZE_0",
+        "stamp": "void*",
+        "nodeToBlock": "B0",
+        "addressingMode": "IMMEDIATE_UNSIGNED_SCALED",
+        "bitMemoryTransferSize": 64,
+        "displacement": 8,
+        "nodeCostCycles": "CYCLES_0",
+        "category": "floating",
+        "id": 72,
+        "node_class": {
+          "node_class": "jdk.graal.compiler.core.aarch64.AArch64AddressNode",
+          "name_template": "",
+          "inputs": [
+            {
+              "direct": true,
+              "name": "base",
+              "type": "Value"
+            },
+            {
+              "direct": true,
+              "name": "index",
+              "type": "Value"
+            }
+          ],
+          "outputs": [
+
+          ]
+        },
+        "has_predecessor": false
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 53,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 1,
+      "to": 47,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 11,
+      "to": 15,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "y",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 14,
+      "to": 54,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 15,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 17,
+      "to": 38,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 18,
+      "to": 38,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 1
+      }
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "props": {
+        "direct": true,
+        "name": "outerFrameState",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 20,
+      "to": 57,
+      "props": {
+        "direct": true,
+        "name": "outerFrameState",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 21,
+      "to": 64,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 29,
+      "to": 54,
+      "props": {
+        "direct": false,
+        "name": "arguments",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 13,
+      "props": {
+        "direct": true,
+        "name": "x",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 33,
+      "to": 11,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 34,
+      "to": 58,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 36,
+      "to": 54,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 37,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 38,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "callTarget",
+        "type": "Extension",
+        "index": 0
+      }
+    },
+    {
+      "from": 41,
+      "to": 72,
+      "props": {
+        "direct": true,
+        "name": "base",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 42,
+      "to": 45,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 42,
+      "to": 46,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "props": {
+        "direct": true,
+        "name": "y",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 44,
+      "to": 42,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 45,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 47,
+      "to": 52,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 51,
+      "to": 44,
+      "props": {
+        "direct": true,
+        "name": "x",
+        "type": "Value",
+        "index": 0
+      }
+    },
+    {
+      "from": 51,
+      "to": 42,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 53,
+      "to": 51,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 56,
+      "to": 33,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 57,
+      "to": 34,
+      "props": {
+        "direct": true,
+        "name": "stateDuring",
+        "type": "State",
+        "index": 0
+      }
+    },
+    {
+      "from": 58,
+      "to": 60,
+      "props": {
+        "direct": true,
+        "name": "trueSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 58,
+      "to": 61,
+      "props": {
+        "direct": true,
+        "name": "falseSuccessor",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 59,
+      "to": 58,
+      "props": {
+        "direct": true,
+        "name": "condition",
+        "type": "Condition",
+        "index": 0
+      }
+    },
+    {
+      "from": 60,
+      "to": 64,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 61,
+      "to": 62,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 62,
+      "to": 63,
+      "props": {
+        "direct": false,
+        "name": "ends",
+        "type": "Association",
+        "index": 0
+      }
+    },
+    {
+      "from": 63,
+      "to": 26,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 64,
+      "to": 65,
+      "props": {
+        "direct": true,
+        "name": "next",
+        "type": null,
+        "index": 0
+      }
+    },
+    {
+      "from": 65,
+      "to": 63,
+      "props": {
+        "direct": false,
+        "name": "ends",
+        "type": "Association",
+        "index": 1
+      }
+    },
+    {
+      "from": 72,
+      "to": 51,
+      "props": {
+        "direct": true,
+        "name": "address",
+        "type": "Association",
+        "index": 0
+      }
+    }
+  ]
+}
